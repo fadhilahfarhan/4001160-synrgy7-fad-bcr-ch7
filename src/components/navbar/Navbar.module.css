@@ -1,0 +1,39 @@
+.navigation{
+  display: flex;
+  justify-content: center;
+  background-color: #F1F3FF;
+  overflow: hidden;
+}
+
+.navigation-container{
+  width: 100%;
+  max-width: 1168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 34px;
+  width: 100px;
+  background-color: #0D28A6;
+}
+
+.menu-items{
+  display: flex;
+  gap: 32px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.menu-items li{
+  list-style-type: none;
+}
+
+.menu-items li a{
+  text-decoration: none;
+  color: black;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
