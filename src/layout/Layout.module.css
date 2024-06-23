@@ -1,0 +1,8 @@
+.layout{
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  width: 1168px;
+}

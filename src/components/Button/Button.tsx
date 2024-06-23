@@ -1,14 +1,21 @@
 import { FC } from "react";
 import style from'./Button.module.css'
+import { IButtonProps } from "../../interfaces/IComponentProps";
+import { useNavigate } from "react-router-dom";
 
-interface IButtonProps {
-  onClick?: () => void
-  title: string
-}
+const Button: FC<IButtonProps> = ({path, title}) => {
+  const navigate = useNavigate();
 
-const Button: FC<IButtonProps> = ({onClick, title}) => {
+  const onClick = () => {
+    if (path) {
+      navigate(path);
+    } else {
+      navigate('/');
+    }
+  };
+
   return (
-    <button className={style['button-component']} onClick={onClick}>{title}</button>
+    <button onClick={onClick} className={style['button-component']}>{title}</button>
   )
 }
 

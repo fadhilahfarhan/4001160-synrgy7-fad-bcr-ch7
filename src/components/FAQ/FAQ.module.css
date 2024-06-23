@@ -1,0 +1,27 @@
+.FAQ{
+  display: flex;
+  justify-content: space-between;
+  margin-block: 100px;
+}
+
+.FAQ-header{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.FAQ-header h3{
+  font: 700 24px/36px Helvetica;
+}
+
+.FAQ-header p{
+  font: 300 14px/20px Helvetica;
+}
+
+.FAQ-accordeon{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

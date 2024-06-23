@@ -11,7 +11,7 @@ const Hero = () => {
             <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
             <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. 
               Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-              <Button title='Mulai Sewa Mobil'/>
+            <Button title='Mulai Sewa Mobil'/>
           </div>
           <div className={style['hero-image']}>
             <img src={imgCar} alt="img_car" />

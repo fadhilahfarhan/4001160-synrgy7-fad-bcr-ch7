@@ -1,0 +1,23 @@
+.CTABanner{
+  height: 326px;
+  margin-block: 100px;
+  background-color: #0D28A6;
+  border-radius: 13px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.CTABanner h2{
+  font: 700 36px/54px Helvetica;
+}
+
+.CTABanner p{
+  width: 460px;
+  font: 300 14px/20px Helvetica;
+  margin-bottom: 32px;
+}

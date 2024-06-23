@@ -1,0 +1,20 @@
+.whyUs-card{
+  width: 268px;
+  height: 196px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+
+.whyUs-card h3{
+  font: 700 16px/24px Helvetica;
+}
+
+.whyUs-card p{
+  font: 300 14px/20px Helvetica;
+}

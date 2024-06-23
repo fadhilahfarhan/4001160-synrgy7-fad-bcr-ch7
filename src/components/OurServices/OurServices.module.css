@@ -1,0 +1,39 @@
+.service{
+  padding-block: 100px;
+}
+
+.service-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.service-content{
+  width: 468px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-content h2{
+  font: 700 24px/36px Helvetica;
+}
+
+.service-content p{
+  width: 460px;
+  font: 300 14px/20px Helvetica;
+}
+
+.service-content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-content ul li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

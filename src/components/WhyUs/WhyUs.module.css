@@ -1,0 +1,25 @@
+.whyUs{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.whyUs-header{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.whyUs-header h2{
+  font: 700 24px/36px Helvetica;
+}
+
+.whyUs-header p{
+  font: 300 14px/20px Helvetica;
+}
+
+.whyUs-cards{
+  display: flex;
+  justify-content: space-between;
+}
