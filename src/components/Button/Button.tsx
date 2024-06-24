@@ -3,14 +3,12 @@ import style from'./Button.module.css'
 import { IButtonProps } from "../../interfaces/IComponentProps";
 import { useNavigate } from "react-router-dom";
 
-const Button: FC<IButtonProps> = ({path, title}) => {
+const Button: FC<IButtonProps> = ({path = '/', title}) => {
   const navigate = useNavigate();
 
   const onClick = () => {
     if (path) {
       navigate(path);
-    } else {
-      navigate('/');
     }
   };
 

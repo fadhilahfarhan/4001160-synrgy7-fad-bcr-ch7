@@ -15,7 +15,11 @@ const Navbar = () => {
             <li><a href="##">Why Us</a></li>
             <li><a href="##">Testimonial</a></li>
             <li><a href="##">FAQ</a></li>
-            <li><Button path='/login' title="Register"/></li>
+            <li>
+              <Button 
+                path={localStorage.getItem('token')?'/':'/login'} 
+                title={localStorage.getItem('token')?"Log Out":"Register"}/>
+            </li>
           </ul>
         </div>
       </Layout>
