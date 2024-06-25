@@ -27,7 +27,7 @@ export const items = [
     content:
       '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”',
     author:'John Doe 32, Bromo',
-    image: require('../../assets/images/male.png'),
+    image: require('../../assets/images/female.png'),
     star: require('../../assets/images/Star.png')
   },
   {
@@ -35,7 +35,7 @@ export const items = [
     content:
       '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”',
     author:'John Doe 32, Bromo',
-    image: require('../../assets/images/male.png'),
+    image: require('../../assets/images/female.png'),
     star: require('../../assets/images/Star.png')
   },
   {

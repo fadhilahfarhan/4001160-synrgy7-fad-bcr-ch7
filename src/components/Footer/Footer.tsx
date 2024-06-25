@@ -1,7 +1,7 @@
 import Icon from '../Icon/Icon';
 import Logo from '../Logo/Logo';
 import style from './Footer.module.css'
-import { contact } from '../../utils/data/FooterData';
+import { contact } from '../../utils/data/footerData';
 import { IIconsProps } from '../../interfaces/IComponentProps';
 
 const Footer = () => {

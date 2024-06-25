@@ -1,6 +1,6 @@
 import style from './OurServices.module.css'
 import serviceImage from '../../assets/images/img_service.png'
-import { serviceList } from '../../utils/data/OurServiceListData'
+import { serviceList } from '../../utils/data/ourServiceListData'
 import { IOurServiceListProps } from '../../interfaces/IComponentProps'
 import OurServiceList from '../OurServiceList/OurServiceList'
 

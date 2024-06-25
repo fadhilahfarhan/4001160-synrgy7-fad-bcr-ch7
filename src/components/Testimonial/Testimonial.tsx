@@ -3,7 +3,7 @@ import { Carousel, Row, Col, Button } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import type { CarouselRef } from 'antd/es/carousel';
 import style from './Testimonial.module.css'; // Import custom CSS for styling
-import { items } from '../../utils/data/TestimonialData';
+import { items } from '../../utils/data/testimonialData';
 const Testimonial = () => {
   const carouselRef = useRef<CarouselRef>(null);
 
