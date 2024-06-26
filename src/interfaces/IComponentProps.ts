@@ -1,7 +1,13 @@
 export interface IButtonProps {
   path?: string
   title: string
+  width?: string
+  onClick?: () => void
 }
+
+export interface IHeroProps {
+  hideButton?: boolean
+} 
 
 export interface IWhyUsCardProps {
   key?: string
@@ -23,4 +29,14 @@ export interface IOurServiceListProps {
   key: string
   icons: IIconsProps
   text: string
+}
+
+export interface IcarProps {
+  image: string, 
+  name: string, 
+  rentPerDay: number, 
+  description: string, 
+  capacity: number, 
+  transmission: string, 
+  year: number
 }

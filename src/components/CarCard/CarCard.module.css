@@ -1,0 +1,56 @@
+.carCard{
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px
+}
+
+.carCard-image{
+  width: 100%;
+  height: 222px;
+}
+
+.carCard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carCard-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  align-items: start;
+}
+
+.carCard-content p{
+  font: 300 14px/20px Helvetica;
+}
+
+.carCard-content .bold{
+  font-weight: 700;
+}
+
+.carCard-content div{
+  display: flex;
+  gap: 8px;
+}
+
+.carCard-content-button{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carCard-content-button div{
+  width: 285px;
+  position: absolute;
+  bottom: 18px;
+}

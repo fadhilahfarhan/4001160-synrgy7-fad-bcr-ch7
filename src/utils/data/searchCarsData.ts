@@ -1,7 +1,7 @@
 export const driverType = [
   { value: '', label: "Pilih Driver"},
-  { value: 'withDriver', label: 'Dengan Supir' },
-  { value: 'withoutDriver', label: 'Tanpa Supir (Lepas Kunci)' },
+  { value: 'Dengan Supir', label: 'Dengan Supir' },
+  { value: 'Tanpa Supir (Lepas Kunci)', label: 'Tanpa Supir (Lepas Kunci)' },
 ]
 
 export const pickUpTime = [
