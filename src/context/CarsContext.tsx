@@ -20,7 +20,6 @@ const CarsProvider: FC<PropsWithChildren<{}>> = ({children}) =>{
   useEffect(() => {
     const getCars = async () => {
       const carsData: ICars[] = await fetchCars();
-      console.log(carsData);
       
       const timeAt = new Date()
       const mutator = getRandomInt(1000000, 100000000);

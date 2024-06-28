@@ -1,15 +1,11 @@
-import { CSSProperties, FC } from "react";
-import style from'./Button.module.css'
+import { FC } from "react";
 import { IButtonProps } from "../../interfaces/IComponentProps";
 import { useNavigate } from "react-router-dom";
+import { ButtonComponent } from './StyledButton'
 
-const Button: FC<IButtonProps> = ({path, title, width, onClick}) => {
+const Button: FC<IButtonProps> = ({path, title, color, width, textColor, onClick}) => {
   const navigate = useNavigate();
-
-  const customStyle: CSSProperties = { 
-    width: width
-  }
-
+  
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -20,7 +16,10 @@ const Button: FC<IButtonProps> = ({path, title, width, onClick}) => {
   };
 
   return (
-    <button onClick={handleClick} style={customStyle} className={style['button-component']}>{title}</button>
+    <ButtonComponent onClick={handleClick}
+    color={color} 
+    Width={width}
+    textColor={textColor}>{title}</ButtonComponent>
   )
 }
 

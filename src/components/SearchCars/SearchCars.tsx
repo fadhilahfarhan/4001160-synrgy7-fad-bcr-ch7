@@ -24,7 +24,7 @@ const SearchCars =() => {
   const filterCars = () => {
     const result = cars.filter((car: ICar) => {
       const condition1 = car.driverType === dataForm.driverType;
-      const condition2 = moment(car.availableAt).isSameOrAfter(moment(dataForm.dates), 'day');
+      const condition2 = moment(dataForm.dates).isSameOrAfter(moment(car.availableAt), 'day');
       const condition3 = !!dataForm.pickUp;
       const condition4 = !dataForm.numberPassenger || car.capacity === Number(dataForm.numberPassenger);
       return condition1 && condition2 && condition3 && condition4;

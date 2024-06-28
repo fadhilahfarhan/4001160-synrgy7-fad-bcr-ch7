@@ -1,8 +1,15 @@
 export interface IButtonProps {
   path?: string
-  title: string
+  title?: string
   width?: string
+  color?: string
+  textColor?: string
   onClick?: () => void
+}
+
+export interface ILogoProps{
+  color?: string
+  width?: string
 }
 
 export interface IHeroProps {
