@@ -33,6 +33,7 @@ export interface ICar {
   transmission: string
   driverType: string
   year: number
+  category: string
   availableAt: Date
   startRent?: string
   finishRent?: string

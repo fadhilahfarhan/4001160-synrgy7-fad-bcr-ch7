@@ -1,6 +1,7 @@
 import { createContext, FC, PropsWithChildren, useEffect, useState } from "react";
 import { CarsContextType, ICar, ICars } from "../interfaces/ICars";
 import fetchCars from "../service/api";
+import moment from "moment";
 
 export const CarsContext = createContext<CarsContextType>({
   cars: [],
@@ -29,6 +30,7 @@ const CarsProvider: FC<PropsWithChildren<{}>> = ({children}) =>{
         image: car.image,
         name: `${car.manufacture} ${car.model}`,
         rentPerDay: car.rentPerDay,
+        category: car.type,
         capacity: car.capacity,
         description: car.description,
         transmission: car.transmission,
@@ -39,7 +41,7 @@ const CarsProvider: FC<PropsWithChildren<{}>> = ({children}) =>{
         startRent: '',
         finishRent: '',
         updatedAt: '',
-        createdAt: Date()
+        createdAt: moment(Date()).format('D MMMM YYYY')
       })) 
       setCars(tranformData)
     }

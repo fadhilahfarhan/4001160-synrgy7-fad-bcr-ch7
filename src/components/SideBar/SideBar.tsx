@@ -4,10 +4,12 @@ import truck from '../../assets/icons/truck.svg'
 import { Sidebar, SidebarIcon, SidebarIcons, SidebarItems }from './StyledSideBar'
 import { useRef, useState} from 'react';
 import { sidebarList } from '../../utils/data/sidebarList';
+import { useNavigate } from 'react-router-dom';
 
 type SidebarList = typeof sidebarList;
 
 const SideBar = () => {
+  const navigate = useNavigate()
   const [activeButton, setActiveButton] = useState<keyof SidebarList>('Dashboard');
   const dashboardButtonRef = useRef<HTMLButtonElement>(null);
   const carsButtonRef = useRef<HTMLButtonElement>(null);
@@ -16,6 +18,11 @@ const SideBar = () => {
   
   const handleButton = (id: keyof SidebarList) => {
     setActiveButton(id);
+    if(id === "Dashboard"){
+      navigate('/dashboard/dashboard')
+    } else {
+      navigate('/dashboard/car-list')
+    }
   };
 
   return (

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const DashboardContentStyled = styled.div`
   margin: 0 0 0 16px;
+  padding-right: 16px;
   display: flex;
   height: 100%;
   overflow-y: auto;
@@ -33,6 +34,22 @@ export const DashboardContentStyled = styled.div`
       width: 351px;
       height: 482px;
       background-color: green;
+    }
+  }
+
+  .list-order{
+    h4{
+      margin-bottom: 16px;
+      border-left: 5px solid #0D28A6;
+      padding: 5px;
+    }
+  }
+
+  .list-car{
+    h4{
+      margin-bottom: 16px;
+      border-left: 5px solid #0D28A6;
+      padding: 5px;
     }
   }
 `
