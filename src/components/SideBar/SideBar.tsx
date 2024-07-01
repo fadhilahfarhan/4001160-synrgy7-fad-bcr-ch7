@@ -21,7 +21,7 @@ const SideBar = () => {
     if(id === "Dashboard"){
       navigate('/dashboard/dashboard')
     } else {
-      navigate('/dashboard/car-list')
+      navigate('/dashboard/cars')
     }
   };
 

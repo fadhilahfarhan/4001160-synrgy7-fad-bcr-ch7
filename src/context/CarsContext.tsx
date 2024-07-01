@@ -41,7 +41,7 @@ const CarsProvider: FC<PropsWithChildren<{}>> = ({children}) =>{
         startRent: '',
         finishRent: '',
         updatedAt: '',
-        createdAt: moment(Date()).format('D MMMM YYYY')
+        createdAt: new Date().toISOString()
       })) 
       setCars(tranformData)
     }

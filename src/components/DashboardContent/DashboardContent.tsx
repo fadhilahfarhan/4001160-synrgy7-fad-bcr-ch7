@@ -6,6 +6,7 @@ import { OrderColumns } from "../../utils/data/orderData";
 import { CarsContext } from "../../context/CarsContext";
 import { ListCarColumns } from "../../utils/data/listCar";
 import { ListCar } from "../../interfaces/IListCar";
+import moment from "moment";
 
 
 const DashboardContent = () => {
@@ -28,7 +29,7 @@ const DashboardContent = () => {
       rentPerDay: car.rentPerDay,
       startRent: car.startRent ? car.startRent : '-',
       finishRent: car.finishRent ? car.finishRent : '-',
-      createdAt: car.createdAt,
+      createdAt: moment(car.createdAt).format('D MMMM YYYY, h:mm:ss a'),
       updatedAt: car.updatedAt ? car.updatedAt : '-'
     }))
 
@@ -40,7 +41,7 @@ const DashboardContent = () => {
   return (
     <DashboardContentStyled>
       <div className="DC-header">
-        <p>Dashboard {'>'} cars</p>
+        <p>Dashboard {'>'} Dashboard</p>
         <h1>Dashboard</h1>
       </div>
 
