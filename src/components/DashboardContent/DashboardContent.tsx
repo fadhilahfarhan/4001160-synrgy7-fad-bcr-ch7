@@ -34,8 +34,8 @@ const DashboardContent = () => {
 
     setListCar(newListCarFormat)
     console.log(listCar);
-    
-  }, [cars.cars, listCar])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cars.cars])
   
   return (
     <DashboardContentStyled>
