@@ -1,8 +1,14 @@
 export const sidebarList = {
-  Dashboard: [
-    'Dashboard'
+  dashboard: [
+    {
+      title: 'Dashboard',
+      navigate: '/admin/dashboard'
+    }
   ],
-  Cars: [
-    'List Car'
+  cars: [
+    {
+      title: 'List Car',
+      navigate: '/admin/cars'
+    }
   ]
 }
