@@ -22,7 +22,8 @@ const SideBar = () => {
   };
 
   useEffect(()=>{
-    setCurrentList('dashboard')
+    const currentListUrl = window.location.pathname.split('/')[2]
+    setCurrentList(currentListUrl)
   }, [])
 
   const subList = () => {

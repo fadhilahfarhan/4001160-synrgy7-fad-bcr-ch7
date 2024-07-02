@@ -75,12 +75,23 @@ export const SidebarItems = styled.div`
       list-style: none;
 
       button{
+        cursor: pointer;
         padding: 8px 16px;
         height: 100%;
         width: 100%;
         background-color: #CFD4ED;
         border: none;
         text-align: left;
+
+        &:hover{
+          background-color: #0D28A6;
+          color:white;
+        }
+
+        &:active{
+          background-color: #0D28A6;
+          color:white;
+        }
       }
     }
    }
