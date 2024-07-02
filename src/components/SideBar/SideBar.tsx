@@ -19,9 +19,9 @@ const SideBar = () => {
   const handleButton = (id: keyof SidebarList) => {
     setActiveButton(id);
     if(id === "Dashboard"){
-      navigate('/dashboard/dashboard')
+      navigate('/admin/dashboard')
     } else {
-      navigate('/dashboard/cars')
+      navigate('/admin/cars')
     }
   };
 

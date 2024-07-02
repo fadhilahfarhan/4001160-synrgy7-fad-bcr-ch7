@@ -2,14 +2,12 @@
 import DashboardContent from "../../components/DashboardContent/DashboardContent"
 import Header from "../../components/Header/Header"
 import SideBar from "../../components/SideBar/SideBar"
-import CarsProvider from "../../context/CarsContext"
-import OrdersProvider from "../../context/OrdersContext"
+import ListCarProvider from "../../context/ListCarContext"
 import { DashboardStyled } from "./StyledDashboard"
 
 const Dashboard = () => {
   return(
-    <CarsProvider>
-      <OrdersProvider>
+    <ListCarProvider>
         <DashboardStyled>
           <SideBar/>
           <div className="container">
@@ -17,8 +15,7 @@ const Dashboard = () => {
             <DashboardContent/>
           </div>
         </DashboardStyled>
-      </OrdersProvider>
-    </CarsProvider>
+    </ListCarProvider>
   )
 }
 

@@ -1,7 +1,6 @@
 import { createContext, FC, PropsWithChildren, useEffect, useState } from "react";
 import { CarsContextType, ICar, ICars } from "../interfaces/ICars";
 import fetchCars from "../service/api";
-import moment from "moment";
 
 export const CarsContext = createContext<CarsContextType>({
   cars: [],

@@ -4,7 +4,7 @@ export interface ICars {
   manufacture: string
   model: string
   image: any
-  rentPerDay: number
+  rentPerDay: string
   capacity: number
   description: string
   transmission: string
@@ -27,7 +27,7 @@ export interface ICar {
   id: string
   image: any
   name: string
-  rentPerDay: number
+  rentPerDay: string
   capacity: number
   description: string
   transmission: string

@@ -17,7 +17,7 @@ const CarCard: FC<IcarProps> = ({image, name, rentPerDay, description, capacity,
 
       <div className={style['carCard-content']}>
         <p>{name}</p>
-        <p className={style.bold}>Rp {rentPerDay} / hari</p> 
+      <p className={style.bold}>{`Rp. ${new Intl.NumberFormat('id-ID').format(Number(rentPerDay))} / Hari`}</p> 
         <p>{description}</p>
         <div> 
           <img src={icons[0].default} alt="icons_users" />

@@ -1,42 +1,39 @@
 import { DashboardContentStyled } from "./StyledDashboardContent";
 import { Table } from 'antd';
 import { useContext, useEffect, useState } from "react";
-import { OrdersContext } from "../../context/OrdersContext";
-import { OrderColumns } from "../../utils/data/orderData";
-import { CarsContext } from "../../context/CarsContext";
+import { OrderColumns, orderData } from "../../utils/data/orderData";
 import { ListCarColumns } from "../../utils/data/listCar";
 import { ListCar } from "../../interfaces/IListCar";
 import moment from "moment";
+import { Orders } from "../../interfaces/IOrders";
+import { ListCarContext } from "../../context/ListCarContext";
 
 
 const DashboardContent = () => {
-  const ordersContext = useContext(OrdersContext);
-  const orders = ordersContext.orders;
+  const [orders, setOrders] = useState<Orders[]>([])
   const ordersColumns = OrderColumns
 
-  const cars = useContext(CarsContext);
+  const listCarContext = useContext(ListCarContext);
   const [listCar, setListCar] = useState<ListCar[]>([])
   const listCarColumns = ListCarColumns
 
-  
-
   useEffect(() => {
-    let no = 1
-    const newListCarFormat = cars.cars.map((car) => ({
+    let no = 1;
+    const newListCarFormat = listCarContext.listCar.map((car) => {
+      return {
+      ...car,
       no: no++,
-      name: car.name,
-      category: car.category,
-      rentPerDay: car.rentPerDay,
+      rentPerDay: `Rp. ${new Intl.NumberFormat('id-ID').format(Number(car.rentPerDay))}`,
       startRent: car.startRent ? car.startRent : '-',
       finishRent: car.finishRent ? car.finishRent : '-',
       createdAt: moment(car.createdAt).format('D MMMM YYYY, h:mm:ss a'),
       updatedAt: car.updatedAt ? car.updatedAt : '-'
-    }))
+    }});
 
     setListCar(newListCarFormat)
-    console.log(listCar);
+    setOrders(orderData)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cars.cars])
+  }, [listCarContext.listCar])
   
   return (
     <DashboardContentStyled>

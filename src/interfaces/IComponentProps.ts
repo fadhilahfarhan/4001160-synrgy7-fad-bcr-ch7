@@ -41,7 +41,7 @@ export interface IOurServiceListProps {
 export interface IcarProps {
   image: string, 
   name: string, 
-  rentPerDay: number, 
+  rentPerDay: string, 
   description: string, 
   capacity: number, 
   transmission: string, 

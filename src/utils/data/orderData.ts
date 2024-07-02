@@ -8,7 +8,7 @@ export const orderData: Orders[] = [
     car: "bmw rawrr",
     startRent: "20 04 2024",
     finishRent: "21 04 2024",
-    price: 1000000,
+    price: `Rp. ${new Intl.NumberFormat('id-ID').format(1000000)}`,
     status: "status"
   },
   {
@@ -17,7 +17,7 @@ export const orderData: Orders[] = [
     car: "bmw rawrr",
     startRent: "20 04 2024",
     finishRent: "21 04 2024",
-    price: 1000000,
+    price: `Rp. ${new Intl.NumberFormat('id-ID').format(1000000)}`,
     status: "status"
   },
   {
@@ -26,7 +26,7 @@ export const orderData: Orders[] = [
     car: "bmw rawrr",
     startRent: "20 04 2024",
     finishRent: "21 04 2024",
-    price: 1000000,
+    price: `Rp. ${new Intl.NumberFormat('id-ID').format(1000000)}`,
     status: "status"
   }
 ] 
