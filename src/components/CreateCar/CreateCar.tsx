@@ -24,6 +24,7 @@ const CreateCar = () => {
 
   const handleSubmit = () => {
     saveListCar(formData);
+    navigation('/admin/cars')
   };
 
 

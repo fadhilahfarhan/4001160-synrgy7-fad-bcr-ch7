@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const CarListContentStyled = styled.div`
-  margin: 0 0 0 16px;
+  margin: 0 0 16px 16px;
   padding-right: 16px;
   display: flex;
   height: 100%;
@@ -38,7 +38,6 @@ export const CarListContentStyled = styled.div`
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
-        text-align: left;
       }
     }
 
